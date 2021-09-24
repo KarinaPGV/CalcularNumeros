@@ -27,6 +27,10 @@ public class Main {
         return Integer.parseInt(input("Ingrese un número:"));
     }
 
+    public static Integer media(Integer sumNumbers,Integer numLeng) {
+        return sumNumbers/numLeng;
+    }
+
     private static void validationNumber() {
         boolean validNumber = true;
         while (validNumber) {
@@ -97,9 +101,6 @@ public class Main {
         printResults(totalSum,numleng,operation);
     }
 
-    public static Integer media(Integer sumNumbers,Integer numLeng) {
-        return sumNumbers/numLeng;
-    }
     public static void printResults(Integer total, Integer numLeng, Operation operation) {
         switch (operation) {
             case SumAllNumbers:
